@@ -1,0 +1,70 @@
+#bai 1 
+def tong(a,b):
+  return a + b 
+print(tong(5,3))
+
+#bai 2 
+def namnhuan(a):
+  if a % 4 == 0:
+    return a 
+print(str(namnhuan(2012))+" la nam nhuan")
+
+#bai 3 
+x=len("34823")
+print(x)
+
+#bai 4,5 
+def bai4():
+  b = []
+  for i in range(1,21):
+    b.append(i)
+  print(b)
+bai4()
+
+def bai5():
+  b=[]
+  for i in range(1,21):
+    if i % 3 == 0: 
+      b.append(i)
+  print(b)
+bai5()
+
+
+#bai 6 
+a = [1, 5, -9, 3]
+a.append(-99)
+print(a)
+
+#bai7
+ 
+b = [1, 5, -9, 3]
+b.insert(0,-99)
+print(b)
+
+#bai 8 
+a = [1, 5, -9, 3]
+def xoaheadortail(m):
+  if m == 'head':
+    return a.remove(a[0])
+  else:
+    return a.remove(a[-1])
+xoaheadortail('head')
+print(a)
+
+
+
+#bai 9 
+import cmath
+def quadro(a, b, c):
+  if a == 0:
+    return -c/b
+  elif b*b - 4*a*c < 0:
+    return "khong co nghiem"
+  elif b*b - 4*a*c == 0:
+    return -b/(2*a)
+  else:
+    return [(-b-cmath.sqrt(b*b - 4*a*c))/(2*a), (-b+ cmath.sqrt(b*b - 4*a*c))/(2*a)]
+print(quadro(1,-5,4))
+print(quadro(1,4,4)
+#bai 10 11 ? 
+        
